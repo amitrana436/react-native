@@ -1,0 +1,40 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: react-devtools-core
+    versions:
+    - 4.10.1
+    - 4.11.0
+    - 4.12.0
+    - 4.12.1
+    - 4.12.4
+  - dependency-name: flow-remove-types
+    versions:
+    - 2.143.1
+    - 2.144.0
+    - 2.145.0
+    - 2.146.0
+    - 2.147.0
+    - 2.148.0
+  - dependency-name: "@babel/generator"
+    versions:
+    - 7.12.11
+    - 7.12.13
+    - 7.12.15
+    - 7.12.17
+    - 7.13.0
+    - 7.13.9
+  - dependency-name: "@react-native-community/cli"
+    versions:
+    - 4.13.1
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
